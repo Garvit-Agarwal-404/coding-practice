@@ -1,0 +1,11 @@
+my_dict={1:"Garvit",2:"Hari",3:"Vishnu"}
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.get(4,18))
+print(my_dict.items())
+lst=[(1,2),(3,4),(5,6)]
+My_dict=dict.fromkeys(lst,20)
+print(My_dict)
+my_dict2={1:"Yam"}
+my_dict.update(my_dict2)
+print(my_dict)

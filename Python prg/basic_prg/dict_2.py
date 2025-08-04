@@ -1,0 +1,12 @@
+Travel_log={
+    "France":{
+        "Cities_visited":["Paris","Lilis","Dijon"],
+        "total_visits":4,
+    },
+    "Germany":{
+        "Cities_visited":["Berlin","Frankfort","Munich"],
+        "total_visits":7,
+    }
+}
+print(Travel_log["France"]["Cities_visited"][0])
+print(Travel_log["Germany"]["total_visits"])

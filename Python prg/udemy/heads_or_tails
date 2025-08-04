@@ -1,0 +1,9 @@
+import random 
+# choice=["Heads","Tails"]
+# answer=random.choice(choice)
+# print(answer)
+answer=random.randint(0,1)
+if(answer==0):
+    print("Heads")
+else:
+    print("Tails")

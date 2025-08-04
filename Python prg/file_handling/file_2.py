@@ -1,0 +1,5 @@
+f=open("aa","r")
+f.seek(5)
+data=f.read()
+print(data)
+print(f.tell())

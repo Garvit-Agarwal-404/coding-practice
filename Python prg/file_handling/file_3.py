@@ -1,0 +1,5 @@
+f=open("aa","r")
+g=open("ab","w")
+data=f.read()
+g.write(data)
+g.close()

@@ -1,0 +1,5 @@
+s=str(input("Enter a string"))
+lst=s.strip().split()
+lst.reverse()
+joined_lst= ' '.join(lst)
+print(joined_lst)

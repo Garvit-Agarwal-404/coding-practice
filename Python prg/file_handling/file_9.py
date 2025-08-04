@@ -1,0 +1,6 @@
+f1=open("C:\\Python\\Screenshot 2024-06-16 223253.png","rb")
+data=f1.read()
+f2=open("C:\\Python\\img1.png","wb")
+f2.write(data)
+f1.close()
+f2.close()
