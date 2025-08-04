@@ -1,0 +1,13 @@
+h1{
+    color:rgb(109, 31, 211);
+    text-align: center;
+    border:solid;
+}
+p{
+    color: white;
+    background-color: blue;
+}
+button{
+    color: white;
+    background-color: black;
+}

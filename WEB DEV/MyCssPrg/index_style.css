@@ -1,0 +1,13 @@
+h1+p{
+    color:red;
+}
+div>p{
+    color:blue;
+}
+div p[id="myid"]{
+    color:aqua;
+}
+div #myid{
+    color:green;
+}
+
