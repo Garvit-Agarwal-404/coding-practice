@@ -1,26 +1,24 @@
 alphabet=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-def caeser(original_msg,shift_num,encode_or_decode):
-    cipher_text=""
-    if(encode_or_decode=='decode'):
-                shift_num*=-1
-    
-    for i in original_msg:
+
+def encode_or_decode(choice,message,shft_no):
+    out=""
+    if(choice=="decode"):
+        shft_no*=-1
+    for i in message:
         if i not in alphabet:
-            cipher_text+=i
+            out+=i
         else:
-            shifted_position=alphabet.index(i)+shift_num
-            shifted_position%=len(alphabet)
-            cipher_text+=alphabet[shifted_position]
-    print(f"The {encode_or_decode} message is {cipher_text}")
+            shft_pstn=(alphabet.index(i)+shft_no)%len(alphabet)
+            out+=alphabet[shft_pstn]
+    return out
 
 valid=True
 while(valid):
     choice=input("Do you want to encode or decode? ").lower()
     message=input("Enter the message: ").lower()
     shft_no=int(input("Enter the shift number: "))
-    caeser(message,shft_no,choice)
-    cont_choice=input("Do you want to continue (Y or N) ?").lower()
-    if(cont_choice=='y'):
-        continue
-    elif(cont_choice=='n'):
-        valid=False
+    result=encode_or_decode(choice,message,shft_no)
+    print(f"{choice} Message: {result}")
+    cnt_choice=input("Do you want to continue(YES) or no(NO)? ").lower()
+    if(cnt_choice!="yes"):
+        break
